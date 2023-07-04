@@ -2,6 +2,7 @@ from random import choice
 
 def coinFlip(x):
   count = x
+  coin = ['Heads','Tails']
   heads = 0
   tails = 0
   prevTails = 0
@@ -13,7 +14,6 @@ def coinFlip(x):
   indexendtails = 0
   
   while count != 0:
-    coin = ['Heads','Tails']
     flip = choice(coin)
     count -= 1
     if flip == 'Heads':
