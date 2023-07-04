@@ -33,5 +33,6 @@ def coinFlip(x):
   print("index ends at: "+ str(indexend-1))
   print(f'Total heads count: {heads}. Total tails count: {tails}')
 
-coinFlip(100)
+x = int(input('Enter how many times coin flips: '))
+coinFlip(x)
   
