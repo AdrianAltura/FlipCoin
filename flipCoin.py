@@ -21,6 +21,7 @@ def coinFlip(x):
     else:
       tails += 1
     list.append(flip)
+  print('\n')
   print(list)
   
   for i in range(0,len(list)):
@@ -41,14 +42,13 @@ def coinFlip(x):
       tailLongest = 0
       
   print('\n')
-  print("The longest sequence of Heads is "+str(prevHeads))
-  print("The longest sequence of Tails is "+str(prevTails))
-  print("index start for heads at: "+ str(indexend-prevHeads))
-  print("index ends at: "+ str(indexend-1))
-  print("index start for tails at: "+ str(indexendtails-prevTails))
-  print("index ends at: "+ str(indexendtails-1))
+  print(f'The longest sequence of Heads is {prevHeads}')
+  print(f'The longest sequence of Tails is {prevTails}')
+  print(f'index start for heads at: {indexend-prevHeads}')
+  print(f'index ends at: {indexend-1}')
+  print(f'index start for tails at: {indexendtails-prevTails}')
+  print(f'index ends at: {indexendtails-1}')
   print(f'Total heads count: {heads}. Total tails count: {tails}')
 
 x = int(input('Enter how many times coin flips: '))
 coinFlip(x)
-  
