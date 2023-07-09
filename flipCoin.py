@@ -1,8 +1,8 @@
-from random import choice
-
+from random import randint
+# 1 = Heads
+# 0 = Tails
 def coinFlip(x):
   count = x
-  coin = ['Heads','Tails']
   heads = 0
   tails = 0
   prevTails = 0
@@ -14,9 +14,9 @@ def coinFlip(x):
   indexendtails = 0
   
   while count != 0:
-    flip = choice(coin)
+    flip = randint(0,1)
     count -= 1
-    if flip == 'Heads':
+    if flip == 1:
       heads += 1
     else:
       tails += 1
@@ -25,7 +25,7 @@ def coinFlip(x):
   print(list)
   
   for i in range(0,len(list)):
-    if list[i] == 'Heads':
+    if list[i] == 1:
         headLongest += 1
     else:            
       if headLongest > prevHeads:
@@ -33,7 +33,7 @@ def coinFlip(x):
         indexend = i
       headLongest = 0
       
-    if list[i] == 'Tails':
+    if list[i] == 0:
         tailLongest += 1
     else:            
       if tailLongest > prevTails:
